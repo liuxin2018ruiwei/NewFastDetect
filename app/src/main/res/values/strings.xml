@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RecoEnFaceDemo</string>
+    <string name="menu_settings">Settings</string>
+    <string name="button_delete">删除</string>
+    <string name="name_hint">输入唯一的名字</string>
+    <string name="register">注册</string>
+    <string name="recognize">识别</string>
+    <string name="manager">管理</string>
+    <string name="detect">检测</string>
+    <string name="state_default">检测中</string>
+    <string name="title_activity_person_manager">PersonManagerActivity</string>
+    <string name="title_activity_reco_face">RecoFaceActivity</string>
+    <string name="title_activity_setting">SettingsActivity</string>
+    <string name="setting">设置</string>
+    <string name="camera_setting">相机</string>
+    <string name="title_activity_test_user_so">TestUserSoActivity</string>
+    <string name="title_activity_file_select">FileSelectActivity</string>
+
+</resources>

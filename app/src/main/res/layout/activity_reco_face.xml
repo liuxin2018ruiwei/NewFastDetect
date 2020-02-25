@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".activity.RecoFaceActivity" >
+
+    <!-- 左边边距 -->
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_width="30dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <!-- 右边边距 -->
+
+    <ScrollView
+        android:id="@+id/left_scrollview"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/setting__btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting" />
+
+            <Button
+                android:id="@+id/camera_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/camera_setting" />
+
+            <Button
+                android:id="@+id/detect_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detect" />
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register" />
+
+            <Button
+                android:id="@+id/reco_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recognize" />
+
+            <Button
+                android:id="@+id/manager_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/manager" />
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/frame_camera_draw"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/left_scrollview"
+        android:layout_toRightOf="@+id/left_layout" >
+
+        <SurfaceView
+            android:id="@+id/surfaceview_camera"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" >
+        </SurfaceView>
+
+        <TextView
+            android:id="@+id/state_text"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:text="@string/state_default"
+            android:textColor="@android:color/white" />
+
+        <com.reconova.face_reco_demo.activity.FaceCanvasView
+            android:id="@+id/canvasview_draw"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+</RelativeLayout>

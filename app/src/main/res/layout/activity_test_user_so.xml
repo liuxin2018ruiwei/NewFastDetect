@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TestUserSoActivity">
+
+    <Button
+        android:id="@+id/buttonSoInit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="1_初始化" />
+
+    <Button
+        android:id="@+id/buttonSoDetect"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonSoInit"
+        android:layout_below="@+id/buttonSoInit"
+        android:text="2_提取人脸框" />
+    <Button
+        android:id="@+id/buttonSoRegister"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonSoDetect"
+        android:layout_below="@+id/buttonSoDetect"
+        android:text="3_注册"
+        />
+    <Button
+        android:id="@+id/buttonSoReco"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonSoRegister"
+        android:layout_below="@+id/buttonSoRegister"
+        android:text="4_识别"
+        />
+
+    <Button
+        android:id="@+id/buttonToCamera"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonSoReco"
+        android:layout_below="@+id/buttonSoReco"
+        android:text="5_相机"
+        />
+
+
+
+</RelativeLayout>

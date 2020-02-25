@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Strings related to Settings -->
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_draw_reverse">界面翻转</string>
+    <string name="pref_description_draw_reverse">用于解决人绘制人脸框呈镜像问题</string>
+    <string name="pref_title__face_similarity">识别相识度阈值</string>
+    <string name="pref_default_face_similarity">50</string>
+    
+    <string name="pref_title__register_num">注册特征提取次数</string>
+    <string name="pref_default_register_num">3</string>
+
+    <string name="pref_title__mouse_speed">鼠标速度</string>
+    <string name="pref_default_mouse_speed">6</string>
+
+    <!-- Example settings for Data & Sync -->
+
+    <!-- Example settings for Notifications -->
+
+</resources>

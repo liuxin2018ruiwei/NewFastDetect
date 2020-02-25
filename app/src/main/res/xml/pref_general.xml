@@ -1,0 +1,49 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="pref_draw_reverse_checkbox"
+        android:summary="@string/pref_description_draw_reverse"
+        android:title="@string/pref_title_draw_reverse" />
+
+
+
+    <!--
+         NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it.
+
+
+    -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_face_similarity"
+        android:inputType="number"
+        android:key="pref_key_face_similarity"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title__face_similarity" />
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_register_num"
+        android:inputType="number"
+        android:key="pref_key_register_num"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title__register_num" />
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_mouse_speed"
+        android:inputType="number"
+        android:key="pref_key_mouse_speed"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title__mouse_speed" />
+
+
+
+</PreferenceScreen>
